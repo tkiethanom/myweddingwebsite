@@ -7,3 +7,30 @@
 .home-main-text{
 	font-family: 'Josefin Slab', serif;
 }
+.gallery-container{
+	margin: auto;
+	text-align: center;
+	margin: auto;
+	display: inline-block;
+	width: 401px;
+	height: 601px;
+}
+.gallery-image{
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	opacity: 100;
+	filter: alpha(opacity=100);
+	-webkit-transition: opacity 2s ease-in-out;
+	-moz-transition: opacity 2s ease-in-out;
+	-ms-transition: opacity 2s ease-in-out;
+	-o-transition: opacity 2s ease-in-out;
+	transition: opacity 2s ease-in-out;
+}
+.gallery-image.fade{
+	opacity: 0;
+	filter: alpha(opacity=0);
+}

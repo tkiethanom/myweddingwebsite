@@ -29,8 +29,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('bootstrap.min');
 		echo $this->Html->css('font-awesome.min');
 
-		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('jquery-1.11.2.min');
+		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('jquery.throttledresize');
+		echo $this->Html->script('imagesloaded.min');
+		echo $this->Html->script('home');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
