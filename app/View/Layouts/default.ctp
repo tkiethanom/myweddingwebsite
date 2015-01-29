@@ -29,8 +29,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('bootstrap.min');
 		echo $this->Html->css('font-awesome.min');
 
-		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('jquery-1.11.2.min');
+		echo $this->Html->script('bootstrap.min');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -43,6 +43,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div id="header">
 			<h1></h1>
 		</div>
+		<?php echo $this->element("navbar") ?>
 		<div id="content">
 			<div class="container-fluid">
 				<div class="row">
