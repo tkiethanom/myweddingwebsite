@@ -26,6 +26,9 @@ body{
 	position: relative;
 	z-index: 100;
 	background-color: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 }
 .gallery-image{
 	-webkit-border-radius: 20px;
