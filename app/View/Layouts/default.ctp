@@ -56,7 +56,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</div>
 		</div>
 		<div id="footer">
-
+			kristinandtawin.com &copy 2015
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
