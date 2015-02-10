@@ -20,7 +20,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=640, initial-scale=1">
+	<meta name="viewport" content="width=640">
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		Kristin + Tawin
