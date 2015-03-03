@@ -35,6 +35,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->script('jquery.throttledresize');
 		echo $this->Html->script('imagesloaded.min');
 		echo $this->Html->script('home');
+		echo $this->Html->script('navbar');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -45,7 +46,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1></h1>
 		</div>
 		<?php echo $this->element("navbar") ?>
 		<div id="content">
