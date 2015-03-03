@@ -20,6 +20,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=640">
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		Kristin + Tawin
@@ -31,6 +32,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		echo $this->Html->script('jquery-1.11.2.min');
 		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('jquery.throttledresize');
+		echo $this->Html->script('imagesloaded.min');
+		echo $this->Html->script('home');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -54,9 +58,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</div>
 		</div>
 		<div id="footer">
-
+			kristinandtawin.com &copy <?php echo date('Y') ?>
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-59717526-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
 </body>
 </html>
