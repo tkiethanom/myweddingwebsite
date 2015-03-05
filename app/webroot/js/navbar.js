@@ -9,8 +9,8 @@ var Navbar = {};
 
 Navbar.resize = function(){
 	var w = $('.navbar-header .branding').width();
-	var window = $(document).width();
-	var left = (window - w)/2;
+	var window_w = window.innerWidth;
+	var left = (window_w - w)/2;
 
 	$('.navbar-header .branding').css('left',left);
 };

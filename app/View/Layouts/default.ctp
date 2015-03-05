@@ -26,7 +26,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		Kristin + Tawin
 	</title>
 	<?php
-		echo $this->Html->css('styles');
+
 		echo $this->Html->css('bootstrap.min');
 		echo $this->Html->css('font-awesome.min');
 
@@ -34,14 +34,18 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('jquery.throttledresize');
 		echo $this->Html->script('imagesloaded.min');
-		echo $this->Html->script('home');
 		echo $this->Html->script('navbar');
+		echo $this->Html->css('app/styles');
+		echo $this->Html->css('app/navbar');
+		echo $this->Html->css('app/footer');
+		echo $this->Html->css('app/'.$page);
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Great+Vibes|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
 	<div id="container">
@@ -51,6 +55,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div id="content">
 			<div class="container-fluid">
 				<div class="row">
+					<?php if($page != 'home'): ?>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<h2 class="page-title"><?php echo $title_for_layout ?></h2>
+								</div>
+							</div>
+						</div>
+					<?php endif; ?>
 					<?php echo $this->Session->flash(); ?>
 
 					<?php echo $this->fetch('content'); ?>

@@ -28,6 +28,7 @@
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
+	Router::connect('/accommodations', array('controller' => 'pages', 'action' => 'display', 'accommodations'));
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**
