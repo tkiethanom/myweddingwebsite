@@ -34,7 +34,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('jquery.throttledresize');
 		echo $this->Html->script('imagesloaded.min');
-		echo $this->Html->script('navbar');
+		echo $this->Html->script('app/app');
+		echo $this->Html->script('app/navbar');
 		echo $this->Html->css('app/styles');
 		echo $this->Html->css('app/navbar');
 		echo $this->Html->css('app/footer');
@@ -44,7 +45,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Great+Vibes|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Great+Vibes|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>

@@ -28,7 +28,7 @@ if(!empty($this->params['pass'][0]) && $this->params['controller'] == 'pages'){
 				<li class="<?php echo ($curr_page == 'thewedding')? 'active' : '' ?>"><a href="#">The Wedding</a></li>
 				<li class="<?php echo ($curr_page == 'gallery')? 'active' : '' ?>"><a href="#">Gallery</a></li>
 				<li class="<?php echo ($curr_page == 'registry')? 'active' : '' ?>"><a href="#">Registry</a></li>
-				<li class="<?php echo ($curr_page == 'travel')? 'active' : '' ?>"><a href="#">Travel</a></li>
+				<li class="<?php echo ($curr_page == 'travel')? 'active' : '' ?>"><a href="/travel">Travel</a></li>
 				<li class="<?php echo ($curr_page == 'accommodations')? 'active' : '' ?>"><a href="/accommodations">Accommodations</a></li>
 				<li class="<?php echo ($curr_page == 'contactus')? 'active' : '' ?>"><a href="#">Contact Us</a></li>
 			</ul>
