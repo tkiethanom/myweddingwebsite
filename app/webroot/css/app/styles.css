@@ -6,17 +6,24 @@ body{
 	padding: 0px;
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
+	background: #fff url(/img/cream_dust.png) repeat;
 }
 #content{
 	margin-top: 90px;
 	margin-bottom: 50px;
 }
 #content .page-title{
-	font-size: 24px;
+	font-size: 28px;
 	text-align: center;
 	margin-top: 35px;
 	font-style: italic;
 	font-family: 'Lora', serif;
+}
+a{
+	color:#b76e79;
+}
+a:hover{
+	color: #cf9ea6;
 }
 @media (min-width: 768px) {
 

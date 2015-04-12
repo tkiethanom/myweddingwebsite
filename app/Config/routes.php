@@ -28,9 +28,14 @@
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
-Router::connect('/the-couple', array('controller' => 'pages', 'action' => 'display', 'the_couple'));
+	Router::connect('/the-couple', array('controller' => 'pages', 'action' => 'display', 'the_couple'));
+	Router::connect('/the-vips', array('controller' => 'pages', 'action' => 'display', 'the_vips' ,null,'The VIPs' ) );
+	Router::connect('/the-wedding', array('controller' => 'pages', 'action' => 'display', 'the_wedding' ) );
+	Router::connect('/gallery', array('controller' => 'galleryImages', 'action' => 'index' ) );
+	Router::connect('/registry', array('controller' => 'pages', 'action' => 'display', 'registry' ) );
 	Router::connect('/travel', array('controller' => 'pages', 'action' => 'display', 'travel'));
 	Router::connect('/accommodations', array('controller' => 'pages', 'action' => 'display', 'accommodations'));
+	Router::connect('/contact-us', array('controller' => 'pages', 'action' => 'display', 'contact_us' ) );
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**

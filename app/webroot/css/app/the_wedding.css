@@ -1,0 +1,68 @@
+.date{
+	margin-top: 25px;
+	font-size: 28px;
+	font-family: 'Great Vibes', cursive;
+	text-align: center;
+}
+.events{
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+.event-image{
+	text-align: center;
+	margin-bottom: 15px;
+	padding-top: 10px;
+}
+.event-image img{
+	margin: auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.event{
+	margin-bottom: 25px;
+}
+.event .time{
+	font-size: 16px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #777;
+}
+.event .location{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.event .title{
+	font-family: 'Lora', serif;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.event .content{
+	margin-bottom: 15px;
+}
+.info .title{
+	font-size: 28px;
+	text-align: left;
+	font-style: italic;
+	font-family: 'Lora', serif;
+	margin-bottom: 15px;
+}
+.topic{
+	margin-bottom: 25px;
+}
+.info .topic-title{
+	font-family: 'Lora', serif;
+	font-size:24px;
+	margin-bottom: 5px;
+}
+.topic .color{
+	height: 50px;
+	width: 50px;
+	border: 1px solid #bbb;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 15px;
+}

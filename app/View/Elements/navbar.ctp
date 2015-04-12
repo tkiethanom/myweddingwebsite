@@ -24,13 +24,13 @@ if(!empty($this->params['pass'][0]) && $this->params['controller'] == 'pages'){
 			<ul class="nav navbar-nav">
 				<li class="navbar-home <?php echo ($curr_page == 'home')? 'active' : '' ?>"><a href="/">Home</a></li>
 				<li class="<?php echo ($curr_page == 'the_couple')? 'active' : '' ?>"><a href="/the-couple">The Couple</a></li>
-				<li class="<?php echo ($curr_page == 'thevips')? 'active' : '' ?>"><a href="#">The VIPs</a></li>
-				<li class="<?php echo ($curr_page == 'thewedding')? 'active' : '' ?>"><a href="#">The Wedding</a></li>
-				<li class="<?php echo ($curr_page == 'gallery')? 'active' : '' ?>"><a href="#">Gallery</a></li>
-				<li class="<?php echo ($curr_page == 'registry')? 'active' : '' ?>"><a href="#">Registry</a></li>
+				<li class="<?php echo ($curr_page == 'the_vips')? 'active' : '' ?>"><a href="/the-vips">The VIPs</a></li>
+				<li class="<?php echo ($curr_page == 'the_wedding')? 'active' : '' ?>"><a href="/the-wedding">The Wedding</a></li>
+				<li class="<?php echo ($curr_page == 'gallery')? 'active' : '' ?>"><a href="/gallery">Gallery</a></li>
+				<li class="<?php echo ($curr_page == 'registry')? 'active' : '' ?>"><a href="registry">Registry</a></li>
 				<li class="<?php echo ($curr_page == 'travel')? 'active' : '' ?>"><a href="/travel">Travel</a></li>
 				<li class="<?php echo ($curr_page == 'accommodations')? 'active' : '' ?>"><a href="/accommodations">Accommodations</a></li>
-				<li class="<?php echo ($curr_page == 'contactus')? 'active' : '' ?>"><a href="#">Contact Us</a></li>
+				<li class="<?php echo ($curr_page == 'contactus')? 'active' : '' ?>"><a href="/contact-us">Contact Us</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->

@@ -15,9 +15,8 @@
 			<div class="hotel-name">The Fairmont <span class="text-nowrap">Newport Beach</span></div>
 			<p class="hotel-address">
 				<a href="https://www.google.com/maps/place/4500+MacArthur+Blvd,+Newport+Beach,+CA+92660" target="_blank">
-					4500 MacArthur Boulevard<br/>
-					Newport Beach, California 92660 <br/>
-					<i class="fa fa-map-marker"></i>
+					<i class="fa fa-map-marker"></i> 4500 MacArthur Boulevard<br/>
+					Newport Beach, California 92660
 				</a>
 			</p>
 
@@ -26,8 +25,8 @@
 			</p>
 
 			<p><strong>Distance</strong><br/>
-			From Ceremony -?<br/>
-			From Reception -?
+				3.3 miles from Ceremony  <br/>
+				0.3 miles from Reception
 			</p>
 
 			<p>

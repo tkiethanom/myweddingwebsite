@@ -1,0 +1,36 @@
+.vips-container{
+	margin-top: 25px;
+}
+.people{
+
+}
+.title{
+	text-align: center;
+	font-family: 'Lora', serif;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.people{
+	margin-bottom: 25px;
+}
+.person{
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #e7e7e7;
+}
+.person img{
+	/*-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;*/
+}
+.name{
+	font-size: 18px;
+}
+.subtitle{
+	color: #888;
+	font-style: italic;
+}
