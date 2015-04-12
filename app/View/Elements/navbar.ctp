@@ -23,7 +23,7 @@ if(!empty($this->params['pass'][0]) && $this->params['controller'] == 'pages'){
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li class="navbar-home <?php echo ($curr_page == 'home')? 'active' : '' ?>"><a href="/">Home</a></li>
-				<li class="<?php echo ($curr_page == 'thecouple')? 'active' : '' ?>"><a href="#">The Couple</a></li>
+				<li class="<?php echo ($curr_page == 'the_couple')? 'active' : '' ?>"><a href="/the-couple">The Couple</a></li>
 				<li class="<?php echo ($curr_page == 'thevips')? 'active' : '' ?>"><a href="#">The VIPs</a></li>
 				<li class="<?php echo ($curr_page == 'thewedding')? 'active' : '' ?>"><a href="#">The Wedding</a></li>
 				<li class="<?php echo ($curr_page == 'gallery')? 'active' : '' ?>"><a href="#">Gallery</a></li>
