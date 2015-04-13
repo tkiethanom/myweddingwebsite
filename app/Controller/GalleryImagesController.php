@@ -1,8 +1,14 @@
 <?php
-class GalleryImagesController extends AppController{
+App::uses('AdminController', 'Controller');
 
-	function index(){
-		$this->set('title_for_layout','Gallery');
-		$this->set('page','gallery');
+class GalleryImagesController extends AdminController
+{
+	public $controller = 'GalleryImages';
+	public $model = 'GalleryImage';
+
+	public function beforeFilter()
+	{
+		parent::beforeFilter();
+		$this->Auth->allow('index');
 	}
 }

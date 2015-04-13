@@ -29,7 +29,6 @@ App::uses('AppController', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
  */
 class PagesController extends AppController {
-
 /**
  * This controller does not use a model
  *
@@ -44,7 +43,13 @@ class PagesController extends AppController {
  * @throws NotFoundException When the view file could not be found
  *	or MissingViewException in debug mode.
  */
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow('display');
+	}
+
 	public function display($page ,$subpage=null,$title=null) {
+
 		if (empty($title)) {
 			$title_for_layout = Inflector::humanize($page);
 		}
@@ -61,5 +66,10 @@ class PagesController extends AppController {
 			}
 			throw new NotFoundException();
 		}
+	}
+
+	function admin(){
+		$this->layout = 'admin';
+		$this->set('title_for_layout','Admin');
 	}
 }

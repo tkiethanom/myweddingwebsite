@@ -25,6 +25,27 @@ a{
 a:hover{
 	color: #cf9ea6;
 }
+.flash-message #flashMessage{
+	border:1px solid #bbb;
+	background-color: #fff;
+	padding: 10px;
+	margin: 20px 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.flash-message #flashMessage.error{
+	border-color:red;
+	background-color: #FFE3E6;
+}
+.flash-message #flashMessage.success{
+	border-color:green;
+	background-color: #f2fff8;
+}
+form .error-message{
+	color: red;
+	margin: 5px 0;
+}
 @media (min-width: 768px) {
 
 }

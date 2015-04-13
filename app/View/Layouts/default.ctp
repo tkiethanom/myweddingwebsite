@@ -39,11 +39,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('app/styles');
 		echo $this->Html->css('app/navbar');
 		echo $this->Html->css('app/footer');
-		echo $this->Html->css('app/'.$page);
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+
+		if(!empty($page)){
+			echo $this->Html->css('app/'.$page);
+		}
 	?>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Great+Vibes|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/png" href="/favicon.png">
@@ -56,16 +59,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div id="content">
 			<div class="container-fluid">
 				<div class="row">
-					<?php if($page != 'home'): ?>
+					<?php if(!isset($page) || $page != 'home'): ?>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
-									<h2 class="page-title"><?php echo $title_for_layout ?></h2>
+									<h2 class="page-title">
+										<?php echo $title_for_layout ?>
+									</h2>
 								</div>
 							</div>
 						</div>
 					<?php endif; ?>
-					<?php echo $this->Session->flash(); ?>
+					<div class="container flash-message">
+						<?php echo $this->Session->flash(); ?>
+					</div>
 
 					<?php echo $this->fetch('content'); ?>
 				</div>
