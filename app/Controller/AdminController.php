@@ -14,6 +14,7 @@ class AdminController extends AppController{
 
 
 		$this->Paginator->settings = array(
+			'limit'=>25,
 			'order'=>array($this->model.'.id'=>'ASC')
 		);
 		$data = $this->Paginator->paginate(
@@ -84,6 +85,38 @@ class AdminController extends AppController{
 		}
 
 		return $this->redirect(array('action' => 'index'));
+	}
+
+	function admin_reorder(){
+
+	}
+
+	function admin_setOrder($id){
+		$output = array('success'=>false, 'error'=>array());
+
+		if(!empty($this->data)){
+			if(isset($this->data['order']) ){
+				$data = $this->{$this->model}->find('first', array('conditions'=>array($this->model.'.id'=>$id)));
+				if(!empty($data)){
+					if($this->data['order'] == ''){
+						$this->request->data['order'] = null;
+					}
+					if($this->{$this->model}->save(array('id'=>$id,'order'=>$this->data['order']))){
+						$output['success'] = true;
+					}
+					else{
+						$output['error'] = 'Unable to save';
+					}
+				}
+				else{
+					$output['error'] = 'Not found';
+				}
+			}
+		}
+
+		header('Content-Type: application/json');
+		echo json_encode($output);
+		exit;
 	}
 
 }

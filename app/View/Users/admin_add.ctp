@@ -1,6 +1,5 @@
 <div class="container">
 	<form action="" method="post">
-		<?php echo $this->Form->input($model.'.id'); ?>
 		<div class="form-group">
 			<?php echo $this->Form->input($model.'.username', array('class'=>'form-control')); ?>
 		</div>

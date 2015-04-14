@@ -113,12 +113,18 @@ class UsersController extends AdminController{
 	function admin_login(){
 		$this->set('title_for_layout','Admin Login');
 
-		if ($this->request->is('post')) {
-			if ($this->Auth->login()) {
-				return $this->redirect($this->Auth->redirectUrl());
-			}
-			$this->Session->setFlash(__('Invalid username or password, try again'),'default',array('class'=>'error') );
+		if($this->Auth->loggedIn()){
+			$this->redirect('/admin');
 		}
+		else{
+			if ($this->request->is('post')) {
+				if ($this->Auth->login()) {
+					return $this->redirect($this->Auth->redirectUrl());
+				}
+				$this->Session->setFlash(__('Invalid username or password, try again'),'default',array('class'=>'error') );
+			}
+		}
+
 	}
 
 	function admin_logout(){

@@ -31,6 +31,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	echo $this->Html->css('font-awesome.min');
 
 	echo $this->Html->script('jquery-1.11.2.min');
+	echo $this->Html->script('jquery-ui/jquery-ui.min.js');
 	echo $this->Html->script('bootstrap.min');
 	echo $this->Html->script('jquery.throttledresize');
 	echo $this->Html->script('imagesloaded.min');
@@ -44,6 +45,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	echo $this->fetch('meta');
 	echo $this->fetch('css');
 	echo $this->fetch('script');
+
+	if(!empty($jsIncludes)){
+		foreach($jsIncludes as $include){
+			echo $this->Html->script($include);
+		}
+	}
 
 	if(!empty($page)){
 		echo $this->Html->css('app/'.$page);

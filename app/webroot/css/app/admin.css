@@ -11,3 +11,18 @@
 table.table{
 	background-color: #fff;
 }
+tbody.sortable tr .handle{
+	cursor: n-resize ;
+}
+.table-striped>tbody>tr:nth-of-type(even){
+	background-color: #fff;
+}
+.sortable-placeholder{
+	background-color: #fff1d0 !important;
+}
+.ui-sortable-helper{
+	background: transparent !important;
+}
+.ui-sortable-helper td{
+	background-color: #fff;
+}
