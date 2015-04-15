@@ -1,7 +1,10 @@
 <?php
-$curr_page = '';
+
 if(!empty($this->params['pass'][0]) && $this->params['controller'] == 'pages'){
 	$curr_page = $this->params['pass'][0];
+}
+elseif(empty($curr_page)){
+	$curr_page = '';
 }
 ?>
 <nav class="navbar navbar-default navbar-fixed-top">

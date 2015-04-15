@@ -31,12 +31,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('font-awesome.min');
 
 		echo $this->Html->script('jquery-1.11.2.min');
-		echo $this->Html->script('jquery-ui/jquery-ui.min.js');
+		echo $this->Html->script('lib/jquery-ui/jquery-ui.min.js');
 		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('jquery.throttledresize');
 		echo $this->Html->script('imagesloaded.min');
+		echo $this->Html->script('lib/fancybox/jquery.fancybox.pack.js');
+
 		echo $this->Html->script('app/app');
 		echo $this->Html->script('app/navbar');
+
 		echo $this->Html->css('app/styles');
 		echo $this->Html->css('app/navbar');
 		echo $this->Html->css('app/footer');
@@ -45,10 +48,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 
+		if(!empty($jsIncludes)){
+			foreach($jsIncludes as $include){
+				echo $this->Html->script($include);
+			}
+		}
+
 		if(!empty($page)){
 			echo $this->Html->css('app/'.$page);
 		}
 	?>
+	<link href="/js/lib/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet" >
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Great+Vibes|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/png" href="/favicon.png">
 </head>

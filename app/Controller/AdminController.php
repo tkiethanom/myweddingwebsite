@@ -88,11 +88,36 @@ class AdminController extends AppController{
 	}
 
 	function admin_reorder(){
+		$output = array('success'=>false, 'error'=>array());
 
+		if(!empty($this->data)){
+			$lowest_row = $this->{$this->model}->find('first',array(
+					'conditions'=>array($this->model.'.id'=>$this->data['id']),
+					'order'=>array($this->model.'.order'=>'ASC')
+				)
+			);
+
+			if($lowest_row[$this->model]['order'] == null){
+				$lowest = 1;
+			}
+			else{
+				$lowest = $lowest_row[$this->model]['order'];
+			}
+
+			foreach($this->data['id'] as $id){
+				$this->{$this->model}->save(array('id'=>$id, 'order'=>$lowest));
+				$lowest++;
+				$output['success'] = true;
+			}
+		}
+
+		header('Content-Type: application/json');
+		echo json_encode($output);
+		exit;
 	}
 
 	function admin_setOrder($id){
-		$output = array('success'=>false, 'error'=>array());
+
 
 		if(!empty($this->data)){
 			if(isset($this->data['order']) ){

@@ -63,7 +63,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <div id="container">
 	<div id="header">
 	</div>
-	<?php echo $this->element("admin_navbar") ?>
+	<?php echo $this->element("admin/navbar") ?>
 	<div id="content">
 		<div class="container-fluid">
 			<div class="row">

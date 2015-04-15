@@ -11,8 +11,8 @@
 table.table{
 	background-color: #fff;
 }
-tbody.sortable tr .handle{
-	cursor: n-resize ;
+.sortable tbody tr .handle{
+	cursor: n-resize;
 }
 .table-striped>tbody>tr:nth-of-type(even){
 	background-color: #fff;
@@ -25,4 +25,11 @@ tbody.sortable tr .handle{
 }
 .ui-sortable-helper td{
 	background-color: #fff;
+}
+.pagination>li>span{
+	color: #bbb;
+}
+.pagination>li.current>span{
+	background-color: #cf9ea6;
+	color: #fff;
 }

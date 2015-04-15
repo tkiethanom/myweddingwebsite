@@ -5,8 +5,8 @@ $(document).ready(function(){
 		items: "tbody tr",
 		helper: "clone",
 		placeholder: "sortable-placeholder",
-		change: function(){
-			AdminGalleryImages.sendReorder($(this));
+		update: function(){
+			AdminGalleryImages.sendReorder();
 		}
 	});
 
@@ -18,7 +18,16 @@ $(document).ready(function(){
 AdminGalleryImages = {};
 
 AdminGalleryImages.sendReorder = function(elem){
+	var $data = $('table.sortable').sortable('serialize');
 
+	$.ajax({
+		method: "POST",
+		url: "/admin/galleryImages/reorder",
+		data: $data
+	})
+	.done(function( msg ) {
+
+	});
 };
 
 AdminGalleryImages.sendSetOrder = function(elem){

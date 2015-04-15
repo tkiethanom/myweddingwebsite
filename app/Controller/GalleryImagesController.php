@@ -25,7 +25,7 @@ class GalleryImagesController extends AdminController
 		);
 
 		$this->set('data', $data);
-		$this->set('jsIncludes',array('app/admin_gallery_images'));
+		$this->set('jsIncludes',array('app/admin/gallery_images'));
 	}
 
 	public function admin_add(){
@@ -104,5 +104,16 @@ class GalleryImagesController extends AdminController
 				return $this->redirect(array('action' => 'index'));
 			}
 		}
+	}
+
+	function index(){
+		$this->set('title_for_layout','Gallery');
+		$this->set('curr_page','gallery');
+		$this->set('page','gallery');
+		$this->set('jsIncludes',array('app/gallery'));
+
+		$gallery_images = $this->GalleryImage->find('all', array('order'=>array('GalleryImage.order'=>'ASC')));
+
+		$this->set('gallery_images', $gallery_images);
 	}
 }
