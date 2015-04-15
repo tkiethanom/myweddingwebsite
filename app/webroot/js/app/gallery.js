@@ -3,10 +3,6 @@ $(document).ready(function(){
 	$(window).on("throttledresize", function (event) {
 		Gallery.resize();
 	});
-
-	$(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
 });
 
 var Gallery = {};
