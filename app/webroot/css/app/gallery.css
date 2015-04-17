@@ -1,13 +1,22 @@
 .gallery-container{
 	padding-top: 25px;
 }
+.gallery-image-container{
+	margin-bottom: 30px;
+}
 .gallery-image{
 	width: 100%;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin-bottom: 30px;
 	cursor: pointer;
+	margin-bottom: 5px;
+}
+.gallery-image-info{
+	padding-left: 5px;
+}
+.gallery-image-info .fa-heart{
+	color: #b76e79;
 }
 .gallery-carousel{
 	-webkit-transition: all .5s ease-in-out;
@@ -82,9 +91,19 @@
 	display: inline-block;
 	margin-right: 5px;
 }
-.like-btn .fa-heart{
+.like-btn .fa-heart,
+.like-btn .fa-heart-o{
 	color: #b76e79;
 	font-size: 24px;
+}
+.like-btn .fa-heart{
+	display: none;
+}
+.like-btn.clicked .fa-heart{
+	display: inline-block;
+}
+.like-btn.clicked .fa-heart-o{
+	display: none;
 }
 .plus-1{
 	position: absolute;

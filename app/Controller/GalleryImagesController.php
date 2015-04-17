@@ -9,7 +9,7 @@ class GalleryImagesController extends AdminController
 	public function beforeFilter()
 	{
 		parent::beforeFilter();
-		$this->Auth->allow('index');
+		$this->Auth->allow('index','like');
 	}
 
 	public function admin_index(){
@@ -115,5 +115,31 @@ class GalleryImagesController extends AdminController
 		$gallery_images = $this->GalleryImage->find('all', array('order'=>array('GalleryImage.order'=>'ASC')));
 
 		$this->set('gallery_images', $gallery_images);
+
+		$session = $this->Session->read('GalleryImages');
+		$this->set('session', $session);
+	}
+
+	function like(){
+		$output = array('success'=>false, 'errors'=>array());
+
+		if(!empty($this->data['id'])){
+			$session = $this->Session->read('GalleryImages.likes.'.$this->data['id']);
+
+			if(empty($session) )
+			{
+				$this->GalleryImage->incrementLikes($this->data['id']);
+				$this->Session->write('GalleryImages.likes.'.$this->data['id'], true);
+
+				$output['success'] = true;
+			}
+			else{
+				$output['errors'][] = 'Already liked.';
+			}
+		}
+
+		header('Content-Type: application/json');
+		echo json_encode($output);
+		exit;
 	}
 }

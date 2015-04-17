@@ -117,7 +117,7 @@ class AdminController extends AppController{
 	}
 
 	function admin_setOrder($id){
-
+		$output = array('success'=>false, 'error'=>array());
 
 		if(!empty($this->data)){
 			if(isset($this->data['order']) ){
