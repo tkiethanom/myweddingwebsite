@@ -33,7 +33,7 @@ elseif(empty($curr_page)){
 				<li class="<?php echo ($curr_page == 'registry')? 'active' : '' ?>"><a href="registry">Registry</a></li>
 				<li class="<?php echo ($curr_page == 'travel')? 'active' : '' ?>"><a href="/travel">Travel</a></li>
 				<li class="<?php echo ($curr_page == 'accommodations')? 'active' : '' ?>"><a href="/accommodations">Accommodations</a></li>
-				<li class="<?php echo ($curr_page == 'contactus')? 'active' : '' ?>"><a href="/contact-us">Contact Us</a></li>
+				<li class="<?php echo ($curr_page == 'contact')? 'active' : '' ?>"><a href="/contact-us">Contact Us</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->

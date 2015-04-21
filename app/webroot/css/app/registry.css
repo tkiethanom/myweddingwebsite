@@ -1,0 +1,20 @@
+.flavor-text{
+	font-size: 36px;
+	font-family: 'Great Vibes', cursive;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.logo{
+	padding: 15px 15px;
+	border: 1px solid #bbb;
+	background: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	display: inline-block;
+}
+.logo img{
+	height: 50px;
+	display: block;
+}

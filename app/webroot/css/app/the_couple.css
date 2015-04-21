@@ -1,7 +1,10 @@
 .couple-container{
 }
 .main-image{
-	margin: 25px 0 25px 0;
+	margin: 25px auto 25px auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 .person{
 	text-align: center;

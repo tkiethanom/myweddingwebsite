@@ -42,7 +42,7 @@
 	Router::connect('/registry', array('controller' => 'pages', 'action' => 'display', 'registry' ) );
 	Router::connect('/travel', array('controller' => 'pages', 'action' => 'display', 'travel'));
 	Router::connect('/accommodations', array('controller' => 'pages', 'action' => 'display', 'accommodations'));
-	Router::connect('/contact-us', array('controller' => 'pages', 'action' => 'display', 'contact_us' ) );
+	Router::connect('/contact-us', array('controller' => 'contacts', 'action' => 'index' ) );
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**

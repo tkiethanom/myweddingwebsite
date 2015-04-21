@@ -21,6 +21,7 @@
 			<tr>
 				<th></th>
 				<th>Image</th>
+				<th>Likes</th>
 				<th>Action</th>
 				<th>Order</th>
 			</tr>
@@ -36,6 +37,9 @@
 						<?php if($row[$model]['filename']): ?>
 							<img src="/img/gallery_images/<?php echo $row[$model]['filename'] ?>" class="img-thumbnail img-responsive" style="height:100px"/>
 						<?php endif; ?>
+					</td>
+					<td>
+						<?php echo $row[$model]['likes']; ?>
 					</td>
 					<td>
 						<a class="btn" href="/admin/<?php echo $this->params['controller'] ?>/edit/<?php echo $row[$model]['id'] ?>" >
