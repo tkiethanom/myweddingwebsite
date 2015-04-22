@@ -4,6 +4,9 @@
 
 		</div>
 		<div class=" col-xs-12 col-sm-8 col-md-8">
+			<p class="form-info text-center">
+				Have questions or want to send some love to the bride and groom?
+			</p>
 			<form action="" method="post">
 				<div class="form-group">
 					<?php echo $this->Form->input('name', array('class'=>'form-control', 'required'=>true)); ?>

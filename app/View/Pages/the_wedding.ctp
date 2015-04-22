@@ -34,7 +34,7 @@
 						</div>
 						<div class="col-xs-12 col-sm-8 col-md-8">
 							<div class="title">Reception</div>
-							<div class="time">4:30 pm </div>
+							<div class="time">5:00 pm </div>
 							<div class="location">The Pacific Club</div>
 							<div class="content">
 
@@ -79,11 +79,21 @@
 						<div class="col-xs-12 col-sm-8 col-md-8">
 							<div class="topic-title">Our Colors</div>
 							<div class="content">
-								<div class="color" style="background-color: #cf9ea6;" title="Pink">
-
+								<div class="color-container">
+									<div class="color" style="background-image:url(/img/blush.jpg)" title="Blush"></div>
+									<div class="color-title">Blush</div>
 								</div>
-								<div class="color" style="background-color: #fff;" title="White">
-
+								<div class="color-container">
+									<div class="color" style="background-color: #FFFFF0;" title="Ivory"></div>
+									<div class="color-title">Ivory</div>
+								</div>
+								<div class="color-container">
+									<div class="color" style="background-image:url(/img/gold.jpg)" title="Gold"></div>
+									<div class="color-title">Gold</div>
+								</div>
+								<div class="color-container">
+									<div class="color" style="background-image:url(/img/rose-gold-2.jpg)" title="Rose Gold"></div>
+									<div class="color-title">Rose Gold</div>
 								</div>
 							</div>
 						</div>

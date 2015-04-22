@@ -5,7 +5,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-sm-6 col-md-6">
 			<div class="person">
 				<div class="inner">
 					<div class="title">The Groom</div>
@@ -16,7 +16,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-sm-6 col-md-6">
 			<div class="person">
 				<div class="inner">
 					<div class="title">The Bride</div>

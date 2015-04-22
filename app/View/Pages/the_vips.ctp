@@ -192,4 +192,27 @@
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="people">
+				<div class="title">
+					Candle Sponsors
+				</div>
+				<div class="person">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<div class="name text-center">Carmencita Corazo and Clifford Jereza</div>
+						</div>
+					</div>
+				</div>
+				<div class="person">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<div class="name text-center">Marisa Kiethanom</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

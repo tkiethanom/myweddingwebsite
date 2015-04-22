@@ -4,9 +4,9 @@
 
 		</div>
 		<div class=" col-xs-12 col-sm-8 col-md-8 text-center" >
-			<p class="flavor-text">&#8220;Thank you for your thoughtfulness&#8221;</p>
+			<p class="flavor-text">Thank you for your thoughtfulness.</p>
 
-			<p>We're registered at the following locations:</p>
+			<p>We are registered at the following locations:</p>
 
 			<p>
 				<a class="logo" target="_blank" href="https://secure.williams-sonoma.com/registry/8dnm7rgkzf/registry-list.html" >
