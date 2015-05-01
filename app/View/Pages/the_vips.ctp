@@ -9,7 +9,7 @@
 	$groomsmen = array(
 		array('name'=>'Matt Kiethanom','subtitle'=>'Best Man'),
 		array('name'=>'Jameson Balingit '),
-		array('name'=>'Roger Tarachai'),
+		array('name'=>'Roger Tharachai'),
 		array('name'=>'Tommy Hua'),
 		array('name'=>'Tony Chan'),
 	);
@@ -22,11 +22,11 @@
 				<div class="title">
 					Bridesmaids
 				</div>
-				<?php foreach($bridesmaids as $person): ?>
+				<?php foreach($bridesmaids as $i => $person): ?>
 					<div class="person">
 						<div class="row">
 							<div class="col-xs-3 col-sm-3 col-md-3">
-								<img class="img-responsive" src="http://placehold.it/320x320&text=Image"/>
+								<img class="img-responsive" src="/img/bridesmaids/bridesmaid-<?php echo $i+1 ?>.jpg"/>
 							</div>
 							<div class="col-xs-9 col-sm-9 col-md-9">
 								<div class="name">
@@ -48,11 +48,11 @@
 				<div class="title">
 					Groomsmen
 				</div>
-				<?php foreach($groomsmen as $person): ?>
+				<?php foreach($groomsmen as $i => $person): ?>
 					<div class="person">
 						<div class="row">
 							<div class="col-xs-3 col-sm-3 col-md-3">
-								<img class="img-responsive" src="http://placehold.it/320x320&text=Image"/>
+								<img class="img-responsive" src="/img/groomsmen/groomsman-<?php echo $i+1?>.jpg"/>
 							</div>
 							<div class="col-xs-9 col-sm-9 col-md-9">
 								<div class="name">

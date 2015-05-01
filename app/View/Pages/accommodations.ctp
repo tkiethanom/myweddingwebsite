@@ -20,15 +20,15 @@
 				</a>
 			</p>
 
-			<p><strong>Rate</strong><br/>
-				from $159/night
-			</p>
+			<div class="section-title">Rate</div>
+			<p>from $159/night</p>
 
-			<p><strong>Distance</strong><br/>
+			<div class="section-title">Distance</div>
+			<p>
 				3.3 miles from Ceremony  <br/>
 				0.3 miles from Reception
 			</p>
-
+			<br/>
 			<p>
 			A block of rooms has been reserved for our guests at a discounted rate. Kindly reserve your room by
 				<span class="text-nowrap">June 10, 2015.</span>

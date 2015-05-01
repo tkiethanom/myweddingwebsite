@@ -1,9 +1,6 @@
 <div class="contact-container container">
 	<div class="row">
-		<div class="col-sm-2 col-md-2 hidden-xs ">
-
-		</div>
-		<div class=" col-xs-12 col-sm-8 col-md-8">
+		<div class=" col-sm-8 col-md-8 col-sm-push-2 col-md-push-2">
 			<p class="form-info text-center">
 				Have questions or want to send some love to the bride and groom?
 			</p>

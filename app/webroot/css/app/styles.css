@@ -49,13 +49,13 @@ form .error-message{
 @media (min-width: 768px) {
 
 }
-@media (min-width: 900px) {
+@media (min-width: 992px) {
 
 }
 @media (min-width: 2000px) {
 
 }
-@media (max-width: 899px) {
+@media (max-width: 991px) {
 	#content{
 		margin-top: 50px;
 	}

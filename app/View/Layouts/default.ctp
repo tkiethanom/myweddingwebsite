@@ -39,6 +39,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->script('jquery.countdown');
 		echo $this->Html->script('lodash.min');
 		echo $this->Html->script('app/home');
+		echo $this->Html->script('app/travel');
 	?>
 		<link rel="stylesheet" type="text/css" href="/js/lib/slick/slick.css" >
 		<link rel="stylesheet" type="text/css" href="/js/lib/slick/slick-theme.css" >

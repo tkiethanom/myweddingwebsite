@@ -1,9 +1,6 @@
 <div class="wedding-container container">
 	<div class="row">
-		<div class="col-sm-2 col-md-2 hidden-xs ">
-
-		</div>
-		<div class=" col-xs-12 col-sm-8">
+		<div class=" col-xs-12 col-sm-8 col-sm-push-2">
 			<div class="date">Saturday, July 11, 2015</div>
 			<div class="events">
 				<div class="event">
@@ -47,36 +44,18 @@
 			</div>
 			<div class="info">
 				<div class="row">
-					<div class="col-xs-12 col-sm-4 col-md-4">
-					</div>
-					<div class="col-xs-12 col-sm-8 col-md-8">
+					<div class="col-xs-12 col-sm-8 col-md-8 col-sm-push-4 col-md-push-4">
 						<div class="title">
 							Miscellaneous Information
 						</div>
-					</div>
-				</div>
 
-				<div class="topic">
-					<div class="row">
-						<div class="col-xs-12 col-sm-4 col-md-4">
-							<div class="event-image">
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-8 col-md-8">
+						<div class="topic">
 							<div class="topic-title">Formal Attire</div>
 							<div class="content">
 								Don't forget your dancing shoes!
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="topic">
-					<div class="row">
-						<div class="col-xs-12 col-sm-4 col-md-4">
-							<div class="event-image">
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-8 col-md-8">
+						<div class="topic">
 							<div class="topic-title">Our Colors</div>
 							<div class="content">
 								<div class="color-container">
@@ -99,7 +78,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>

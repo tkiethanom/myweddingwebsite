@@ -25,13 +25,15 @@
 }
 .event .time{
 	font-size: 16px;
-	font-weight: 900;
+	font-weight: 600;
 	text-transform: uppercase;
 	color: #777;
 }
 .event .location{
-	font-size: 18px;
+	font-size: 24px;
 	margin-bottom: 10px;
+	font-weight: 300;
+	color: #333;
 }
 .event .title{
 	font-family: 'Lora', serif;
@@ -78,4 +80,10 @@
 	text-align: center;
 	color: #777;
 	font-size: 12px;
+}
+@media (max-width: 991px) {
+	.event-image img{
+		height: auto;
+		max-height: 175px;
+	}
 }
