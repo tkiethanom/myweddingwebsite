@@ -32,3 +32,15 @@
 .content{
 	text-align: left;
 }
+.question-header{
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	color: #cf9ea6;
+}
+ol{
+	font-weight: bold;
+	padding-left: 20px;
+}
+ol li p{
+	font-weight: normal;
+}

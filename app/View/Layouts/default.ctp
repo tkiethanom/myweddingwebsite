@@ -40,6 +40,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->script('lodash.min');
 		echo $this->Html->script('app/home');
 		echo $this->Html->script('app/travel');
+		echo $this->Html->script('app/the-couple');
 	?>
 		<link rel="stylesheet" type="text/css" href="/js/lib/slick/slick.css" >
 		<link rel="stylesheet" type="text/css" href="/js/lib/slick/slick-theme.css" >

@@ -62,30 +62,39 @@
 					Hungry? Grab a bite at some of our favorite restaurants!
 				</p>
 				<div class="location">
-					<div class="location-image" style="background-color: #bbb "></div>
+					<div class="location-image" style="background-image: url(/img/todo/shikdorak.jpg)"></div>
 					<div class="location-text">
 						<div class="location-name">
-							<a href="http://www.yelp.com/biz/class-302-tea-cafe-irvine-3" target="_blank">Shik do rak</a>
+							<a href="http://www.yelp.com/biz/shik-do-rak-irvine?osq=shikdorak" target="_blank">Shik Do Rak</a>
 						</div>
-						<div class="location-description">Boba runs are a must and what better place than a self-serve boba place!</div>
+						<div class="location-description">AYCE KBBQ aka All you can eat Korean BBQ, an all-time favorite for Kristin & Tawin.</div>
 					</div>
 				</div>
 				<div class="location">
-					<div class="location-image" style="background-color: #bbb"></div>
+					<div class="location-image" style="background-image: url(/img/todo/nanasan.jpg)"></div>
 					<div class="location-text">
 						<div class="location-name">
-							<a href="http://www.yelp.com/biz/nekter-juice-bar-irvine-3" target="_blank">Boiling Point</a>
+							<a href="http://www.yelp.com/biz/nana-san-newport-beach" target="_blank">Nana San</a>
 						</div>
-						<div class="location-description">Nothing says California like a good juice bar.</div>
+						<div class="location-description">One of our favorite sushi spots! Sit at the bar and order omakase(Chef’s choice), you won’t be disappointed!</div>
 					</div>
 				</div>
 				<div class="location">
-					<div class="location-image" style="background-color: #bbb"></div>
+					<div class="location-image" style="background-image: url(/img/todo/sprinkles.jpg)"></div>
 					<div class="location-text">
 						<div class="location-name">
-							<a href="http://www.yelp.com/biz/bosscat-kitchen-and-libations-newport-beach-2" target="_blank">Tang 190</a>
+							<a href="http://www.yelp.com/biz/sprinkles-cupcakes-newport-beach?osq=sprinkles" target="_blank">Sprinkles Cupcakes</a>
 						</div>
-						<div class="location-description">Tawin's favorite is the Jameson with a side of pickle juice</div>
+						<div class="location-description">Sprinkles Cupcakes - Kristin’s favorite cupcake store</div>
+					</div>
+				</div>
+				<div class="location">
+					<div class="location-image" style="background-image: url(/img/todo/ledip.jpg)"></div>
+					<div class="location-text">
+						<div class="location-name">
+							<a href="http://www.yelp.com/biz/le-diplomate-cafe-irvine" target="_blank">Le Diplomate Cafe</a>
+						</div>
+						<div class="location-description">Order the chicken broccoli mushroom sandwich and don't forget the Sriracha. </div>
 					</div>
 				</div>
 			</div>
@@ -144,7 +153,7 @@
 						<div class="location-name">
 							<a href="https://www.google.com/maps/place/Fashion+Island/@33.61619,-117.875587,17z/data=!3m1!4b1!4m2!3m1!1s0x80dce087ae58eb51:0xc69e22d864ab16bf" target="_blank">Fashion Island</a>
 						</div>
-						<div class="location-description">Nordstroms, Bloomingdales, and all the designer brand names you can think of all under one roof. Need we say more?</div>
+						<div class="location-description">Poppy’s favorite mall. An outdoor mall with department stores, plenty of brand names and dog friendly of course!</div>
 					</div>
 				</div>
 				<div class="location">
