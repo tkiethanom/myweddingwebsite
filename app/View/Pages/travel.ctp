@@ -196,7 +196,7 @@
 						<div class="location-name">
 							<a href="https://www.google.com/maps/place/Main+Beach+Park/@33.5423595,-117.7855919,18z/data=!4m2!3m1!1s0x0000000000000000:0x238d0ca45ae43768" target="_blank">Laguna Beach</a>
 						</div>
-						<div class="location-description">Just 15 minutes south of Newport Beach. Great beach views and nice town with shopping and restaurants.</div>
+						<div class="location-description">Just 15 minutes south of Newport Beach. Great beach views and a nice little town with shopping and restaurants.</div>
 					</div>
 				</div>
 			</div>
