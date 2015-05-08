@@ -29,7 +29,7 @@ class ContactsController extends AdminController
 					$Email = new CakeEmail();
 					$Email->from(array($this->data['email'] => $this->data['name']));
 					//$Email->to('kristinandtawin@gmail.com');
-					$Email->to('tawin.k@gmail.com');
+					$Email->to('kristinandtawin@gmail.com');
 					$Email->subject('Contact Us Form - kristinandtawin.com');
 					$Email->send($this->data['message']);
 

@@ -153,7 +153,7 @@
 				<div class="person">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12">
-							<div class="name text-center">Carmen and Bingo Alcoseba </div>
+							<div class="name text-center">Camillo and Carmen Alcoseba </div>
 						</div>
 					</div>
 				</div>

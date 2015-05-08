@@ -5,7 +5,7 @@
 		</div>
 		<div class=" col-xs-12 col-sm-8 col-md-8">
 			<div class="flavor-text">
-				&#8220;Thanks for reaching out to us!&#8221;
+				Thanks for reaching out to us!
 			</div>
 			<p class="text-center"> We'll get back to you shortly. <i class="fa fa-smile-o"></i></p>
 		</div>

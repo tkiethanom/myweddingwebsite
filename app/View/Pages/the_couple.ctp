@@ -82,7 +82,7 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-6 col-md-6 col-sm-push-3 col-md-push-3">
-			<div class="person">
+			<div class="puppy">
 				<div class="inner">
 					<div class="image text-center" style="padding: 10px 0 20px 0">
 						<img class="img-responsive img-circle" src="/img/poppy.jpg" style="display: inline-block"  />

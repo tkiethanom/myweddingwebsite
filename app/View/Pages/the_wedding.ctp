@@ -14,9 +14,14 @@
 							<div class="title">Wedding Ceremony</div>
 							<div class="time">1:00 pm</div>
 							<div class="location"> Our Lady Queen of Angels Catholic Church</div>
+							<div class="address">
+								2046 Mar Vista Dr.
+								Newport Beach, CA 92660
+							</div>
 							<div class="content">
 								Goin' to the chapel and we're gonna get married!
 								Please join us for our wedding ceremony to witness our union.
+								Our wedding ceremony is open to our guests of any faith.
 							</div>
 							<a class="btn btn-default"  target="_blank" href="https://www.google.com/maps/place/Our+Lady+Queen+of+Angels+Catholic+Church/@33.631693,-117.876704,17z/data=!3m1!4b1!4m2!3m1!1s0x80dcde2d21f43cab:0x790c36e8fb273cc2" >View on Map</a>
 						</div>
@@ -33,6 +38,10 @@
 							<div class="title">Reception</div>
 							<div class="time">5:00 pm </div>
 							<div class="location">The Pacific Club</div>
+							<div class="address">
+								4110 MacArthur Blvd.
+								Newport Beach, CA 92660
+							</div>
 							<div class="content">
 
 								We said "I do" and now it's time to celebrate! Join us for cocktails, dinner, and dancing.

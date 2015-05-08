@@ -85,7 +85,7 @@
 						<div class="location-name">
 							<a href="http://www.yelp.com/biz/sprinkles-cupcakes-newport-beach?osq=sprinkles" target="_blank">Sprinkles Cupcakes</a>
 						</div>
-						<div class="location-description">Sprinkles Cupcakes - Kristin’s favorite cupcake store</div>
+						<div class="location-description">Kristin’s favorite cupcake store.</div>
 					</div>
 				</div>
 				<div class="location">
@@ -117,7 +117,7 @@
 					<div class="location-image" style="background-image: url(/img/todo/nektar.jpg)"></div>
 					<div class="location-text">
 						<div class="location-name">
-							<a href="http://www.yelp.com/biz/nekter-juice-bar-irvine-3" target="_blank">Nektar</a>
+							<a href="http://www.yelp.com/biz/nekter-juice-bar-irvine-3" target="_blank">Nekter</a>
 						</div>
 						<div class="location-description">Nothing says California like a good juice bar.</div>
 					</div>
@@ -128,7 +128,7 @@
 						<div class="location-name">
 							<a href="http://www.yelp.com/biz/bosscat-kitchen-and-libations-newport-beach-2" target="_blank">Bosscat Kitchen and Libations</a>
 						</div>
-						<div class="location-description">Tawin's favorite is the Jameson with a side of pickle juice</div>
+						<div class="location-description">Tawin's favorite is the Jameson with a side of pickle juice.</div>
 					</div>
 				</div>
 			</div>
