@@ -28,6 +28,21 @@
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
+	Router::connect('/admin', array('controller' => 'pages', 'action' => 'admin'));
+	Router::connect('/admin/login', array('controller' => 'users', 'action' => 'login', 'admin' => true));
+	Router::connect('/admin/logout', array('controller' => 'users', 'action' => 'logout', 'admin' => true));
+	Router::connect('/users/login', array('controller'=>'users','action'=>'login','admin'=>true));
+	Router::connect('/users/logout', array('controller' => 'users', 'action' => 'logout', 'admin' => true));
+	Router::connect('/login', array('controller'=>'users','action'=>'login','admin'=>true));
+	Router::connect('/logout', array('controller'=>'users','action'=>'logout','admin'=>true));
+	Router::connect('/the-couple', array('controller' => 'pages', 'action' => 'display', 'the_couple'));
+	Router::connect('/the-vips', array('controller' => 'pages', 'action' => 'display', 'the_vips' ,null,'The VIPs' ) );
+	Router::connect('/the-wedding', array('controller' => 'pages', 'action' => 'display', 'the_wedding' ) );
+	Router::connect('/gallery', array('controller' => 'galleryImages', 'action' => 'index' ) );
+	Router::connect('/registry', array('controller' => 'pages', 'action' => 'display', 'registry' ) );
+	Router::connect('/travel', array('controller' => 'pages', 'action' => 'display', 'travel'));
+	Router::connect('/accommodations', array('controller' => 'pages', 'action' => 'display', 'accommodations'));
+	Router::connect('/contact-us', array('controller' => 'contacts', 'action' => 'index' ) );
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**

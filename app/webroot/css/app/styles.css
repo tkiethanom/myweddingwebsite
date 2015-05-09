@@ -1,0 +1,65 @@
+*{
+
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	background: #fff url(/img/cream_dust.png) repeat;
+}
+#content{
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+#content .page-title{
+	font-size: 28px;
+	text-align: center;
+	margin-top: 35px;
+	font-style: italic;
+	font-family: 'Lora', serif;
+}
+a{
+	color:#b76e79;
+}
+a:hover{
+	color: #cf9ea6;
+}
+.flash-message #flashMessage{
+	border:1px solid #bbb;
+	background-color: #fff;
+	padding: 10px;
+	margin: 20px 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.flash-message #flashMessage.error{
+	border-color:red;
+	background-color: #FFE3E6;
+}
+.flash-message #flashMessage.success{
+	border-color:green;
+	background-color: #f2fff8;
+}
+form .error-message{
+	color: red;
+	margin: 5px 0;
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 2000px) {
+
+}
+@media (max-width: 991px) {
+	#content{
+		margin-top: 50px;
+	}
+}
+@media (max-width: 1023px) {
+
+}

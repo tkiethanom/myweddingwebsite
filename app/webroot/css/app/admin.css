@@ -1,0 +1,35 @@
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+	margin-left: 0px;
+	position: static;
+}
+.radio label, .checkbox label{
+	padding-left: 10px;
+}
+table.table{
+	background-color: #fff;
+}
+.sortable tbody tr .handle{
+	cursor: n-resize;
+}
+.table-striped>tbody>tr:nth-of-type(even){
+	background-color: #fff;
+}
+.sortable-placeholder{
+	background-color: #fff1d0 !important;
+}
+.ui-sortable-helper{
+	background: transparent !important;
+}
+.ui-sortable-helper td{
+	background-color: #fff;
+}
+.pagination>li>span{
+	color: #bbb;
+}
+.pagination>li.current>span{
+	background-color: #cf9ea6;
+	color: #fff;
+}

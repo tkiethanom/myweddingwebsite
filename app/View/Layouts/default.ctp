@@ -20,37 +20,78 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=640">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		Kristin + Tawin
 	</title>
 	<?php
-		echo $this->Html->css('styles');
+
 		echo $this->Html->css('bootstrap.min');
 		echo $this->Html->css('font-awesome.min');
 
 		echo $this->Html->script('jquery-1.11.2.min');
+		echo $this->Html->script('lib/jquery-ui/jquery-ui.min.js');
 		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('jquery.throttledresize');
 		echo $this->Html->script('imagesloaded.min');
-		echo $this->Html->script('home');
+		echo $this->Html->script('lib/slick/slick.min');
+		echo $this->Html->script('jquery.countdown');
+		echo $this->Html->script('lodash.min');
+		echo $this->Html->script('app/home');
+		echo $this->Html->script('app/travel');
+		echo $this->Html->script('app/the-couple');
+	?>
+		<link rel="stylesheet" type="text/css" href="/js/lib/slick/slick.css" >
+		<link rel="stylesheet" type="text/css" href="/js/lib/slick/slick-theme.css" >
+	<?php
+
+		echo $this->Html->script('app/app');
+		echo $this->Html->script('app/navbar');
+		echo $this->Html->css('app/styles');
+		echo $this->Html->css('app/navbar');
+		echo $this->Html->css('app/footer');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+
+		if(!empty($jsIncludes)){
+			foreach($jsIncludes as $include){
+				echo $this->Html->script($include);
+			}
+		}
+
+		if(!empty($page)){
+			echo $this->Html->css('app/'.$page);
+		}
 	?>
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Great+Vibes|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<h1></h1>
 		</div>
+		<?php echo $this->element("navbar") ?>
 		<div id="content">
 			<div class="container-fluid">
 				<div class="row">
-					<?php echo $this->Session->flash(); ?>
+					<?php if(!isset($page) || $page != 'home'): ?>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<h2 class="page-title">
+										<?php echo $title_for_layout ?>
+									</h2>
+								</div>
+							</div>
+						</div>
+					<?php endif; ?>
+					<div class="container flash-message">
+						<?php echo $this->Session->flash(); ?>
+					</div>
 
 					<?php echo $this->fetch('content'); ?>
 				</div>

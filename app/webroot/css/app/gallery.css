@@ -1,0 +1,137 @@
+.gallery-container{
+	padding-top: 25px;
+}
+.gallery-image-container{
+	margin-bottom: 30px;
+}
+.gallery-image{
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	margin-bottom: 5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-ms-behavior: url(/backgroundsize.min.htc);
+}
+.gallery-image-info{
+	padding-left: 5px;
+}
+.gallery-image-info .fa-heart{
+	color: #b76e79;
+}
+.gallery-carousel{
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.gallery-carousel.slick-slider{
+	margin-bottom: 0px;
+}
+.gallery-carousel img{
+	margin: auto;
+	text-align: center;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+.modal-body{
+	position: relative;
+}
+#myModal .ajax-loader{
+	position: absolute;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	top:50%;
+	margin-top: -32px;
+	z-index: 100;
+	vertical-align: middle;
+	display: table-cell;
+}
+#myModal .ajax-loader img{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+#myModal .modal-dialog{
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.slick-prev{
+	left: -55px;
+}
+.slick-next{
+	right: -55px;
+}
+
+.modal-close{
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	font-size: 24px;
+	color: #bbb;
+}
+.modal-close i{
+	height:25px;
+	width: 25px;
+	line-height: 1em;
+
+}
+.modal-header{
+	padding: 10px;
+}
+.heart-container{
+	position: relative;
+}
+.like-btn{
+	cursor: pointer;
+	display: inline-block;
+}
+.love-it{
+	height: 30px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 5px;
+}
+.like-btn .fa-heart,
+.like-btn .fa-heart-o{
+	color: #b76e79;
+	font-size: 24px;
+}
+.like-btn .fa-heart{
+	display: none;
+}
+.like-btn.clicked .fa-heart{
+	display: inline-block;
+}
+.like-btn.clicked .fa-heart-o{
+	display: none;
+}
+.plus-1{
+	position: absolute;
+	opacity: 0;
+	margin-left: 5px;
+	margin-top: 0px;
+	vertical-align: middle;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.plus-1.active{
+	opacity: 1;
+}
+@media (max-width: 767px) {
+	.slick-prev, .slick-next{
+		display: none !important;
+	}
+}
