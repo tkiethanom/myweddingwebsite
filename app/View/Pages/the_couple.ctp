@@ -11,7 +11,7 @@
 					<div class="title">The Groom</div>
 					<div class="name">Tawin Michael Kiethanom</div>
 					<div class="content">
-						<p>Born in Northern CA, moved to Southern CA at age 3, then moved once again to Hawaii (such is Military life). Tawin lived in paradise (Hawaii) from elementary to high school until he moved back to California for college. Tawin is the middle child of three (he has an older brother Matt and younger sister Marisa). He develops websites and on his free time loves to play video games and play with Poppy.</p>
+						<p>Born in Northern CA, moved to Southern CA at age 1, then moved once again to Hawaii (such is Military life). Tawin lived in paradise (Hawaii) from elementary to high school until he moved back to California for college. Tawin is the middle child of three (he has an older brother Matt and younger sister Marisa). He develops websites and on his free time loves to play video games and play with Poppy.</p>
 
 						<div class="question-header">5 questions:</div>
 						<ol>
