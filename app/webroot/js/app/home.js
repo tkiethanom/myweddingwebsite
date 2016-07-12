@@ -1,9 +1,9 @@
 $(document).ready(function(){
-	var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
-		nextYear = new Date(2015,6,11,13,00,00,00),
+	var labels = ['year', 'month', 'week', 'day'],
+		nextYear = new Date(2015,6,11),
 		template = _.template($('#main-example-template').html()),
-		currDate = '00:00:00:00:00',
-		nextDate = '00:00:00:00:00',
+		currDate = '00:00:00:00',
+		nextDate = '00:00:00:00',
 		parser = /([0-9]{2})/gi,
 		$example = $('#main-example');
 	// Parse countdown string to an object
@@ -35,9 +35,10 @@ $(document).ready(function(){
 		}));
 	});
 	// Starts the countdown
-	$example.countdown(nextYear, function(event) {
-		var newDate = event.strftime('%w:%d:%H:%M:%S'),
+	$example.countdown(nextYear, {elapse: true}).on('update.countdown', function(event) {
+		var newDate = event.strftime('%Y:%m:%w:%d'),
 			data;
+
 		if (newDate !== nextDate) {
 			currDate = nextDate;
 			nextDate = newDate;

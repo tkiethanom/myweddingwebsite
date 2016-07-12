@@ -12,6 +12,6 @@
 		</div>
 	</script>
 	<div class="flavor-text">
-		Until the Big Day!
+		Since the Big Day!
 	</div>
 </div>
