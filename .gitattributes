@@ -33,3 +33,7 @@
 *.ico binary
 *.mo binary
 *.pdf binary
+*.eot binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
