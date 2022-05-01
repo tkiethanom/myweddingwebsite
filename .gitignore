@@ -6,6 +6,10 @@
 /dist
 /tags
 *.mo
+/app/Config/database.php
+/app/webroot/google*
+*robots.txt
+/app/webroot/img/gallery_images/
 
 # IDE and editor specific files #
 #################################
