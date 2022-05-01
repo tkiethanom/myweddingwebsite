@@ -669,7 +669,7 @@ class JsHelperTest extends CakeTestCase {
 	}
 
 /**
- * Test that Object::Object() is not breaking json output in JsHelper
+ * Test that CakeObject::Object() is not breaking json output in JsHelper
  *
  * @return void
  */

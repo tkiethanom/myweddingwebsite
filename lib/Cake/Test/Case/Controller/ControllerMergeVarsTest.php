@@ -19,6 +19,7 @@
  */
 
 App::uses('Controller', 'Controller');
+App::uses('CakeObject', 'Core');
 
 /**
  * Test case AppController
@@ -47,7 +48,7 @@ class MergeVarsAppController extends Controller {
  *
  * @package       Cake.Test.Case.Controller
  */
-class MergeVarComponent extends Object {
+class MergeVarComponent extends CakeObject {
 
 }
 

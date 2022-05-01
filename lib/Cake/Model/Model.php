@@ -20,7 +20,7 @@
 
 App::uses('ClassRegistry', 'Utility');
 App::uses('Validation', 'Utility');
-App::uses('String', 'Utility');
+App::uses('CakeText', 'Utility');
 App::uses('Hash', 'Utility');
 App::uses('BehaviorCollection', 'Model');
 App::uses('ModelBehavior', 'Model');
@@ -30,6 +30,7 @@ App::uses('Xml', 'Utility');
 App::uses('CakeEvent', 'Event');
 App::uses('CakeEventListener', 'Event');
 App::uses('CakeEventManager', 'Event');
+App::uses('CakeObject', 'Core');
 
 /**
  * Object-relational mapper.
@@ -42,7 +43,7 @@ App::uses('CakeEventManager', 'Event');
  * @package       Cake.Model
  * @link          http://book.cakephp.org/2.0/en/models.html
  */
-class Model extends Object implements CakeEventListener {
+class Model extends CakeObject implements CakeEventListener {
 
 /**
  * The name of the DataSource connection that this Model uses
@@ -1915,9 +1916,9 @@ class Model extends Object implements CakeEventListener {
 				if (empty($this->data[$this->alias][$this->primaryKey]) && $this->_isUUIDField($this->primaryKey)) {
 					if (array_key_exists($this->primaryKey, $this->data[$this->alias])) {
 						$j = array_search($this->primaryKey, $fields);
-						$values[$j] = String::uuid();
+						$values[$j] = CakeText::uuid();
 					} else {
-						list($fields[], $values[]) = array($this->primaryKey, String::uuid());
+						list($fields[], $values[]) = array($this->primaryKey, CakeText::uuid());
 					}
 				}
 
@@ -2026,7 +2027,7 @@ class Model extends Object implements CakeEventListener {
 					$values = array($id, $row);
 
 					if ($isUUID && $primaryAdded) {
-						$values[] = String::uuid();
+						$values[] = CakeText::uuid();
 					}
 
 					$newValues[$row] = $values;
@@ -3187,7 +3188,7 @@ class Model extends Object implements CakeEventListener {
 				$list = array("{n}.{$this->alias}.{$this->primaryKey}", "{n}.{$this->alias}.{$this->displayField}", null);
 			} else {
 				if (!is_array($query['fields'])) {
-					$query['fields'] = String::tokenize($query['fields']);
+					$query['fields'] = CakeText::tokenize($query['fields']);
 				}
 
 				if (count($query['fields']) === 1) {

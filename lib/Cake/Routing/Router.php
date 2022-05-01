@@ -664,7 +664,7 @@ class Router {
  * created later in the request.
  *
  * Nested requests will create a stack of requests. You can remove requests using
- * Router::popRequest(). This is done automatically when using Object::requestAction().
+ * Router::popRequest(). This is done automatically when using CakeObject::requestAction().
  *
  * Will accept either a CakeRequest object or an array of arrays. Support for
  * accepting arrays may be removed in the future.
@@ -689,7 +689,7 @@ class Router {
  *
  * @return CakeRequest The request removed from the stack.
  * @see Router::setRequestInfo()
- * @see Object::requestAction()
+ * @see CakeObject::requestAction()
  */
 	public static function popRequest() {
 		return array_pop(self::$_requests);

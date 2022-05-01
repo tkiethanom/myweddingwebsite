@@ -15,14 +15,14 @@
  * @since         CakePHP(tm) v 2.1
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
+App::uses('CakeObject', 'Core');
 /**
  * PhpAcl implements an access control system using a plain PHP configuration file.
  * An example file can be found in app/Config/acl.php
  *
  * @package Cake.Controller.Component.Acl
  */
-class PhpAcl extends Object implements AclInterface {
+class PhpAcl extends CakeObject implements AclInterface {
 
 /**
  * Constant for deny

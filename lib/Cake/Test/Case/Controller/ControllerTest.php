@@ -20,6 +20,7 @@ App::uses('CakeRequest', 'Network');
 App::uses('CakeResponse', 'Network');
 App::uses('SecurityComponent', 'Controller/Component');
 App::uses('CookieComponent', 'Controller/Component');
+App::uses('CakeObject', 'Core');
 
 /**
  * AppController class
@@ -284,7 +285,7 @@ class TestController extends ControllerTestAppController {
  *
  * @package       Cake.Test.Case.Controller
  */
-class TestComponent extends Object {
+class TestComponent extends CakeObject {
 
 /**
  * beforeRedirect method

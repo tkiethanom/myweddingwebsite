@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-App::uses('Object', 'Core');
+App::uses('CakeObject', 'Core');
 App::uses('Router', 'Routing');
 App::uses('Controller', 'Controller');
 App::uses('Model', 'Model');
@@ -132,7 +132,7 @@ class RequestActionController extends Controller {
  *
  * @package       Cake.Test.Case.Core
  */
-class TestObject extends Object {
+class TestObject extends CakeObject {
 
 /**
  * firstName property

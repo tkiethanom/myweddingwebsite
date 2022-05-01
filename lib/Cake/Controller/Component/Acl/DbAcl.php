@@ -17,6 +17,7 @@
 App::uses('AclInterface', 'Controller/Component/Acl');
 App::uses('Hash', 'Utility');
 App::uses('ClassRegistry', 'Utility');
+App::uses('CakeObject', 'Core');
 
 /**
  * DbAcl implements an ACL control system in the database. ARO's and ACO's are
@@ -37,7 +38,7 @@ App::uses('ClassRegistry', 'Utility');
  *
  * @package       Cake.Controller.Component.Acl
  */
-class DbAcl extends Object implements AclInterface {
+class DbAcl extends CakeObject implements AclInterface {
 
 /**
  * Constructor

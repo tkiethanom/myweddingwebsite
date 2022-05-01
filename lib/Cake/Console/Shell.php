@@ -23,13 +23,14 @@ App::uses('ConsoleOptionParser', 'Console');
 App::uses('ClassRegistry', 'Utility');
 App::uses('File', 'Utility');
 App::uses('ClassRegistry', 'Utility');
+App::uses('CakeObject', 'Core');
 
 /**
  * Base class for command-line utilities for automating programmer chores.
  *
  * @package       Cake.Console
  */
-class Shell extends Object {
+class Shell extends CakeObject {
 
 /**
  * Output constant making verbose shells.
@@ -356,7 +357,7 @@ class Shell extends Object {
 	}
 
 /**
- * Dispatch a command to another Shell. Similar to Object::requestAction()
+ * Dispatch a command to another Shell. Similar to CakeObject::requestAction()
  * but intended for running shells from other shells.
  *
  * ### Usage:
@@ -584,11 +585,11 @@ class Shell extends Object {
  * @param string $text Text the text to format.
  * @param string|int|array $options Array of options to use, or an integer to wrap the text to.
  * @return string Wrapped / indented text
- * @see String::wrap()
+ * @see CakeText::wrap()
  * @link http://book.cakephp.org/2.0/en/console-and-shells.html#Shell::wrapText
  */
 	public function wrapText($text, $options = array()) {
-		return String::wrap($text, $options);
+		return CakeText::wrap($text, $options);
 	}
 
 /**
