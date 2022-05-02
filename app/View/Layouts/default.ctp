@@ -24,7 +24,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		Kristin + Tawin
-	</title>
+	</title>	
 	<?php
 
 		echo $this->Html->css('bootstrap.min');
@@ -36,8 +36,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->script('jquery.throttledresize');
 		echo $this->Html->script('imagesloaded.min');
 		echo $this->Html->script('lib/slick/slick.min');
-		echo $this->Html->script('jquery.countdown');
+		echo $this->Html->script('jquery.plugin.min');
+		echo $this->Html->script('jquery.countdown.min');		
 		echo $this->Html->script('lodash.min');
+		echo $this->Html->script('moment.min');
 		echo $this->Html->script('app/home');
 		echo $this->Html->script('app/travel');
 		echo $this->Html->script('app/the-couple');

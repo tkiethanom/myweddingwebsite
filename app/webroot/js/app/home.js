@@ -1,65 +1,44 @@
 $(document).ready(function(){
-	var labels = ['year', 'month', 'week', 'day'],
-		nextYear = new Date(2015,6,11),
-		template = _.template($('#main-example-template').html()),
-		currDate = '00:00:00:00',
-		nextDate = '00:00:00:00',
-		parser = /([0-9]{2})/gi,
+	var labels = ['years', 'months', 'weeks', 'days'],
+		sinceDate = new Date(2015,06,11),
+		template = _.template($('#main-example-template').html()),		
+		currDate = ['00','00','00','00'],		
 		$example = $('#main-example');
-	// Parse countdown string to an object
-	function strfobj(str) {
-		var parsed = str.match(parser),
-			obj = {};
-		labels.forEach(function(label, i) {
-			obj[label] = parsed[i]
-		});
-		return obj;
-	}
-	// Return the time components that diffs
-	function diff(obj1, obj2) {
-		var diff = [];
-		labels.forEach(function(key) {
-			if (obj1[key] !== obj2[key]) {
-				diff.push(key);
-			}
-		});
-		return diff;
-	}
-	// Build the layout
-	var initData = strfobj(currDate);
-	labels.forEach(function(label, i) {
-		$example.append(template({
-			curr: initData[label],
-			next: initData[label],
+	
+	// Build the layout	
+	labels.forEach(function(label) {
+		$('#countdown').append(template({
+			curr: currDate[label],
+			next: currDate[label],
 			label: label
-		}));
+		}));		
 	});
-	// Starts the countdown
-	$example.countdown(nextYear, {elapse: true}).on('update.countdown', function(event) {
-		var newDate = event.strftime('%Y:%m:%w:%d'),
-			data;
 
-		if (newDate !== nextDate) {
-			currDate = nextDate;
-			nextDate = newDate;
-			// Setup the data
-			data = {
-				'curr': strfobj(currDate),
-				'next': strfobj(nextDate)
-			};
-			// Apply the new values to each node that changed
-			diff(data.curr, data.next).forEach(function(label) {
-				var selector = '.%s'.replace(/%s/, label),
-					$node = $example.find(selector);
-				// Update the node
-				$node.removeClass('flip');
-				$node.find('.curr').text(data.curr[label]);
-				$node.find('.next').text(data.next[label]);
-				// Wait for a repaint to then flip
-				_.delay(function($node) {
-					$node.addClass('flip');
-				}, 50, $node);
-			});
-		}
-	});
+	function tickHandler(event) {						
+		// Setup the data
+		data = {
+			'curr': currDate,
+			'next': event
+		};					
+
+		// Apply the new values to each node that changed
+		labels.forEach(function(label, i) {			
+			$node = $('#countdown').find('.' + label);
+			// Update the node
+			$node.removeClass('flip');
+			console.log(data.curr[i]);
+			$node.find('.curr').text(data.curr[i].toString().padStart(2,0));
+			$node.find('.next').text(data.next[i].toString().padStart(2,0));
+			// Wait for a repaint to then flip
+			_.delay(function($node) {
+				$node.addClass('flip');
+			}, 50, $node);			
+		});
+
+		$example.countdown('pause');
+	}
+	
+
+	// Starts the countdown
+	$example.countdown({since: sinceDate, format: 'YOWD', onTick: tickHandler });
 });

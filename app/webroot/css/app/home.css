@@ -62,16 +62,18 @@
 	}
 }
 
-
-.main-example {
+#main-example {
+	display: none;
+}
+.countdown {
 	margin: 0 auto;
 	width: 355px;
 	margin-bottom: 30px;
 }
-.main-example .countdown-container {
+.countdown .countdown-container {
 	height: 130px;
 }
-.main-example .time {
+.countdown .time {
 	border-radius: 5px;
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 	display: inline-block;
@@ -104,7 +106,7 @@
 	-o-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-.main-example .count {
+.countdown .count {
 	background: #fff;
 	color: #cf9ea6;
 	display: block;
@@ -130,7 +132,7 @@
 	-o-transform-style: flat;
 	transform-style: flat;
 }
-.main-example .count.top {
+.countdown .count.top {
 	border-top: 1px solid rgba(187, 187, 187, 1);
 	border-bottom: 1px solid rgba(238, 238, 238, .1);
 	border-radius: 5px 5px 0 0;
@@ -142,7 +144,7 @@
 	-o-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
 }
-.main-example .count.bottom {
+.countdown .count.bottom {
 	background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
 	background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
 	background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
@@ -161,9 +163,9 @@
 	-o-transform-origin: 50% 0;
 	transform-origin: 50% 0;
 }
-.main-example .count.next {
+.countdown .count.next {
 }
-.main-example .label {
+.countdown .label {
 	font-size: normal;
 	margin-top: 5px;
 	display: block;
@@ -173,7 +175,7 @@
 	color: #333;
 }
 /* Animation start */
-.main-example .count.curr.top {
+.countdown .count.curr.top {
 	-webkit-transform: rotateX(0deg);
 	-moz-transform: rotateX(0deg);
 	-ms-transform: rotateX(0deg);
@@ -181,7 +183,7 @@
 	transform: rotateX(0deg);
 	z-index: 3;
 }
-.main-example .count.next.bottom {
+.countdown .count.next.bottom {
 	-webkit-transform: rotateX(90deg);
 	-moz-transform: rotateX(90deg);
 	-ms-transform: rotateX(90deg);
@@ -190,7 +192,7 @@
 	z-index: 2;
 }
 /* Animation end */
-.main-example .flip .count.curr.top {
+.countdown .flip .count.curr.top {
 	-webkit-transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
 	-ms-transition: all 250ms ease-in-out;
@@ -203,7 +205,7 @@
 	-o-transform: rotateX(-90deg);
 	transform: rotateX(-90deg);
 }
-.main-example .flip .count.next.bottom {
+.countdown .flip .count.next.bottom {
 	-webkit-transition: all 250ms ease-in-out 250ms;
 	-moz-transition: all 250ms ease-in-out 250ms;
 	-ms-transition: all 250ms ease-in-out 250ms;
@@ -217,20 +219,20 @@
 	transform: rotateX(0deg);
 }
 @media screen and (max-width: 48em) {
-	.main-example {
+	.countdown {
 		width: 100%;
 	}
-	.main-example .countdown-container {
+	.countdown .countdown-container {
 		height: 100px;
 	}
-	.main-example .time {
+	.countdown .time {
 		height: 70px;
 		width: 48px;
 	}
-	.main-example .count {
+	.countdown .count {
 		font-size: 2em;
 	}
-	.main-example .label {
+	.countdown .label {
 		font-size: 0.8em;
 		top: 72px;
 	}
