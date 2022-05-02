@@ -69,7 +69,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		}
 	?>
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Great+Vibes|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Great+Vibes|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
